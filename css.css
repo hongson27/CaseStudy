@@ -1,0 +1,9 @@
+body {
+    background-image: url("860.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+td, th {
+    text-align: center;
+    vertical-align: middle
+}
