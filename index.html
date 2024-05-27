@@ -10,7 +10,8 @@
     <title>Case Study</title>
 </head>
 <body>
-<table style="position:relative; left: 240px; border: 1px solid black; width: 1200px" class="table table-dark table-striped table-hover">
+<table style="position:relative; left: 240px; border: 1px solid black; width: 1200px"
+       class="table table-dark table-striped table-hover">
     <thead>
     <tr>
         <th style="font-size: 40px" colspan="8">Thông tin sản phẩm</th>
@@ -36,19 +37,19 @@
         <th colspan=2 style="font-size: 30px">Thông tin sản phẩm</th>
     </tr>
     <tr>
-        <th style="width: 100px">Tên sản phẩm</th>
+        <th style="width: 100px"><label for="name">Tên sản phẩm</label></th>
         <td style="text-align: left"><input id="name" type="text"/></td>
     </tr>
     <tr>
-        <th>Giá bán</th>
+        <th><label for="price">Giá bán</label></th>
         <td style="text-align: left"><input id="price" type="text"/></td>
     </tr>
     <tr>
-        <th>Chuẩn kết nối</th>
+        <th><label for="connectionStandard">Chuẩn kết nối</label></th>
         <td style="text-align: left"><input id="connectionStandard" type="text"/></td>
     </tr>
     <tr>
-        <th>Loại switch</th>
+        <th><label for="switchType">Loại switch</label></th>
         <td style="text-align: left"><select id="switchType">
             <option value="brown">Brown</option>
             <option value="red">Red</option>
@@ -59,11 +60,11 @@
         <th>Ảnh</th>
         <td style="text-align: left">
             <input id="image" type="file" accept="image/*"/>
-            <button onclick="getImage()">Chọn</button>
+            <!--            <button onclick="getImage()">Chọn</button>-->
         </td>
     </tr>
     <tr>
-        <th>Số lượng hàng</th>
+        <th><label for="quantity">Số lượng hàng</label></th>
         <td style="text-align: left">
             <input id="quantity" type="text"/>
         </td>

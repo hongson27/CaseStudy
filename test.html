@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="image" type="file" accept="image/*"/>
+<button onclick="getImage()">Chọn</button>
+<script>
+    function getImage(){
+        let inputImage = document.getElementById('image').files;
+        if (inputImage.length > 0){
+            return inputImage[0].name;
+        } else {
+            return 'Chưa chọn ảnh';
+        }
+    }
+
+</script>
+</body>
+</html>

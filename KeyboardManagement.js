@@ -9,7 +9,7 @@ class KeyboardManagement {
 
             table += '<tr>';
 
-            table += '<td>' + (i+1) + '</td>';
+            table += '<td>' + (i + 1) + '</td>';
 
             table += '<td>';
             table += this.keyBoards[i].getName();
@@ -53,10 +53,11 @@ class KeyboardManagement {
         this.keyBoards.splice(id, 1);
     }
 
-  findKeyboardById(id){
-      return this.keyBoards[id];
-  }
+    findKeyboardById(id) {
+        return this.keyBoards[id];
+    }
 
-   edit(keyboard, name, price, connectionStandard, switchType, image, quantity){
-       keyboard.edit(name, price, connectionStandard, switchType, image, quantity);   }
+    edit(keyboard, name, price, connectionStandard, switchType, image, quantity) {
+        keyboard.edit(name, price, connectionStandard, switchType, image, quantity);
+    }
 }
